@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { motion } from 'framer-motion'
 import { Zap, Globe, Brain, Code2 } from 'lucide-react'
-import useScrollReveal from '../../hooks/useScrollReveal'
+import { useScrollReveal } from '../../hooks/useScrollReveal'
 
 const traits = [
   { icon: Code2, label: 'Precision', desc: 'Every line of code is intentional.', color: '#00f5ff' },

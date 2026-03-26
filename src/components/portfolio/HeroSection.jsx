@@ -3,14 +3,17 @@ import { ArrowRight, Code2, Terminal, Cpu } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden px-6">
-      {/* Decorative Background */}
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden px-6"
+    >
+      {/* Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,245,255,0.03)_0%,transparent_50%)]" />
-         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,rgba(185,85,229,0.04)_0%,transparent_50%)] blur-[100px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,245,255,0.03)_0%,transparent_50%)]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,rgba(185,85,229,0.04)_0%,transparent_50%)] blur-[100px]" />
       </div>
 
-      {/* Floating Badges (Desktop Only) */}
+      {/* Floating Badges */}
       <motion.div
         animate={{ y: [-10, 10, -10], rotate: [0, 5, 0] }}
         transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
@@ -38,48 +41,45 @@ export default function HeroSection() {
         <span className="font-mono text-xs text-white/50">AI / ML APIs</span>
       </motion.div>
 
-      {/* Main Content */}
+      {/* MAIN CLEAN CONTENT */}
       <div className="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center">
-        {/* Status Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="flex items-center gap-2 mb-8 glass-card px-4 py-1.5 rounded-full border border-cyan-400/20"
-        >
-          <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" style={{ boxShadow: '0 0 10px #00f5ff' }} />
-          <span className="font-mono text-[10px] text-cyan-400 tracking-widest uppercase">Available for work</span>
-        </motion.div>
 
-        {/* Main Heading */}
+        {/* Heading */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
+          transition={{ duration: 0.7 }}
           className="font-orbitron text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight"
         >
           WEB
           <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400" style={{ WebkitTextFillColor: 'transparent', WebkitBackgroundClip: 'text', backgroundSize: '200% auto', animation: 'gradient 4s linear infinite' }}>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400"
+            style={{
+              WebkitTextFillColor: 'transparent',
+              WebkitBackgroundClip: 'text',
+              backgroundSize: '200% auto',
+              animation: 'gradient 4s linear infinite'
+            }}>
             DEVELOPER
           </span>
         </motion.h1>
 
-        {/* Paragraph */}
+        {/* Description */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
           className="font-space text-lg md:text-xl text-white/50 max-w-2xl mb-12 leading-relaxed"
         >
-          I engineer digital experiences that bridge the gap between design and complex logic. Specialized in high-performance web applications and AI integrations.
+          I engineer digital experiences that bridge the gap between design and complex logic.
+          Specialized in high-performance web applications and AI integrations.
         </motion.p>
 
-        {/* Action Buttons */}
+        {/* Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.4 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center gap-6"
         >
           <a
@@ -103,11 +103,11 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll Indicator (kept) */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
+        transition={{ delay: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
         <span className="font-mono text-[10px] text-white/30 tracking-[0.3em] uppercase [writing-mode:vertical-rl] mb-4">
@@ -115,10 +115,11 @@ export default function HeroSection() {
         </span>
         <motion.div
           animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+          transition={{ duration: 1.5, repeat: Infinity }}
           className="w-px h-12 bg-gradient-to-b from-cyan-400 to-transparent"
         />
       </motion.div>
+
     </section>
   );
 }

@@ -1,55 +1,53 @@
 import { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
-
-// Component Imports
+import WebGLBackground from '../components/portfolio/WebGLBackground';
+import ParticleBackground from '../components/portfolio/ParticleBackground';
+import CustomCursor from '../components/portfolio/CustomCursor';
+import Scene3D from '../components/portfolio/Scene3D';
+import LoadingScreen from '../components/portfolio/LoadingScreen';
 import Navbar from '../components/portfolio/Navbar';
 import HeroSection from '../components/portfolio/HeroSection';
 import AboutSection from '../components/portfolio/AboutSection';
-import ProjectsSection from '../components/portfolio/ProjectsSection';
-import SkillsSection from '../components/portfolio/SkillsSection';
 import GoalSection from '../components/portfolio/GoalSection';
+import SkillsSection from '../components/portfolio/SkillsSection';
+import ProjectsSection from '../components/portfolio/ProjectsSection';
 import ContactSection from '../components/portfolio/ContactSection';
 import Footer from '../components/portfolio/Footer';
-import CustomCursor from '../components/portfolio/CustomCursor';
-import FloatingObjects from '../components/portfolio/FloatingObjects';
-import ParticleBackground from '../components/portfolio/ParticleBackground';
-import LoadingScreen from '../components/portfolio/LoadingScreen';
+import SmoothScroller from '../components/portfolio/SmoothScroller';
 
 export default function Portfolio() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-[#030303] text-white selection:bg-cyan-400 selection:text-black overflow-x-hidden">
-      
-      {/* Cinematic Loader */}
-      <AnimatePresence mode="wait">
-        {isLoading && (
-          <LoadingScreen key="loader" onComplete={() => setIsLoading(false)} />
-        )}
-      </AnimatePresence>
+    <>
+      <LoadingScreen onComplete={() => setLoaded(true)} />
 
-      {/* Main Content Render after loading */}
-      {!isLoading && (
+      {loaded && (
         <>
-          {/* Global Interactive Layers */}
-          <CustomCursor />
-          <FloatingObjects />
+          {/* Fixed global layers */}
+          <WebGLBackground />
           <ParticleBackground />
-          
-          <Navbar />
-          
-          <main className="relative z-10">
-            <HeroSection />
-            <AboutSection />
-            <ProjectsSection />
-            <SkillsSection />
-            <GoalSection />
-            <ContactSection />
-          </main>
+          <CustomCursor />
 
-          <Footer />
+          {/* Global R3F floating scene */}
+          <Scene3D className="fixed inset-0 z-[-1] pointer-events-none" style={{ opacity: 0.35 }} />
+
+          {/* Smooth-scrolled content */}
+          <SmoothScroller>
+            <div className="relative min-h-screen overflow-x-hidden">
+              <div className="relative z-10">
+                <Navbar />
+                <HeroSection />
+                <AboutSection />
+                <GoalSection />
+                <SkillsSection />
+                <ProjectsSection />
+                <ContactSection />
+                <Footer />
+              </div>
+            </div>
+          </SmoothScroller>
         </>
       )}
-    </div>
+    </>
   );
 }

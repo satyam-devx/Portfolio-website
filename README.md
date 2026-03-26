@@ -10,6 +10,27 @@ Welcome to the digital realm of **Satyam Kumar Jha**. This isn't just a portfoli
 
 ---
 
+## ⚠️ The "Digital Integrity" Version 
+This version is for those who respect professional code and design.
+
+⚖️ **Intellectual Property & Usage Notice**
+​This project is a labor of original craft and digital engineering. While the code is open for inspiration, its identity is not.
+
+**​The Following Actions are Strictly Prohibited:**
+**​Mirroring:** Full-scale replication or cloning of the design architecture.
+**​Reskinning:** Reposting with superficial content changes to claim originality.
+**​Commercial Exploitation:** Using this framework for client work or paid projects.
+**​Educational Misuse:** Creating tutorials or derivative content based on this exact blueprint.
+
+​**The Code of Honor:**
+If you incorporate specific logic or snippets, explicit attribution and a link back to the original repository are mandatory.
+
+**​"Inspiration is free; Originality is earned. Build your own legacy—don't just shadow mine."**
+​
+ — Satyam Kumar Jha
+
+ ---
+
 ## ✨ Key Features
 
 - 🎭 **Interactive 3D Backgrounds:** Powered by **Three.js** and **WebGL** for a deeply immersive experience.
@@ -32,7 +53,7 @@ Welcome to the digital realm of **Satyam Kumar Jha**. This isn't just a portfoli
 
 ## 📂 Project Structure
 
-```text
+bash
 Portfolio-Website/
 │
 ├── public/
@@ -145,17 +166,25 @@ Portfolio-Website/
 ├── tailwind.config.js
 └── vite.config.js
 
-🚀 Getting Started
+---
+
+## 🚀 Getting Started
+
 Follow these steps to run the project locally on your machine or in Termux:
  * Clone the repository:
+   bash
    git clone [https://github.com/satyam-devx/Portfolio-Website.git](https://github.com/satyam-devx/Portfolio-Website.git)
 cd Portfolio-Website
 
  * Install dependencies:
+   bash
    npm install
 
  * Launch the development server:
+   bash
    npm run dev
+
+   ---
 
 👨‍💻 About The Developer
 I am Satyam Kumar Jha, a Creative Developer dedicated to pushing the boundaries of the web. I build high-performance applications with a focus on visual storytelling and technical excellence.

@@ -48,7 +48,7 @@ You are allowed to:
 > **"Inspiration is free; Originality is earned.  
 Build your own legacy — don’t just shadow mine."**
 
-<p align="right"><b>— Satyam Kumar Jha</b></p>
+<p align="right"><b>— Satyam </b></p>
 
 ---
 
@@ -146,8 +146,8 @@ I don’t just write code — I design systems where **logic meets art** and **p
   <a href="https://github.com/satyam-devx">
     <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github"/>
   </a>
-  <a href="#">
-    <img src="https://img.shields.io/badge/LinkedIn-Coming_Soon-blue?style=for-the-badge&logo=linkedin"/>
+  <a href="https://t.me/theonesatyam">
+    <img src="https://img.shields.io/badge/Telegram-@theonesatyam-26A5E4?style=for-the-badge&logo=telegram&logoColor=white"/>
   </a>
   <a href="https://instagram.com/satyamtbh">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>

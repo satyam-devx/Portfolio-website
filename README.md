@@ -10,6 +10,48 @@ Welcome to the digital realm of **Satyam**. This isn't just a portfolio; it's a 
 
 ---
 
+## 🛡️ Digital Integrity & Usage Policy
+
+### ⚖️ Intellectual Property Notice
+
+This project represents a **high level of original craftsmanship and digital engineering**.  
+While the code is open for learning and inspiration, the **creative identity, structure, and experience are strictly protected**.
+
+---
+
+### 🚫 Strictly Prohibited
+
+The following actions are **not allowed under any circumstances**:
+
+- ❌ **Mirroring** — Full replication or cloning of the design/system architecture  
+- ❌ **Reskinning** — Superficial changes to claim false originality  
+- ❌ **Commercial Exploitation** — Using this project for client work or paid services  
+- ❌ **Educational Misuse** — Creating tutorials, courses, or derivative content based on this exact implementation  
+
+---
+
+### ✅ Code of Honor
+
+You are allowed to:
+
+- ✔️ Take inspiration  
+- ✔️ Study implementation patterns  
+- ✔️ Reuse small logic snippets *(with proper credit)*  
+
+> **Mandatory Rule:**  
+> Any reused logic must include **clear attribution** and a **link to the original repository**.
+
+---
+
+### 🧠 Philosophy
+
+> **"Inspiration is free; Originality is earned.  
+Build your own legacy — don’t just shadow mine."**
+
+<p align="right"><b>— Satyam Kumar Jha</b></p>
+
+---
+
 ## ✨ Key Features
 
 - 🎭 **Interactive 3D Backgrounds:** Powered by **Three.js** and **WebGL** for a deeply immersive experience.
@@ -75,14 +117,55 @@ npm install
 npm run dev
 ```
 
-👨‍💻 About The Developer
-I am Satyam Kumar Jha, a Creative Developer dedicated to pushing the boundaries of the web. I build high-performance applications with a focus on visual storytelling and technical excellence.
-> "Code is poetry, but 3D is a lifestyle." — Satyam
-> 
-🤝 Let's Connect
- * GitHub: @satyam-devx
- * LinkedIn: Coming soon
- * Instagram: @satyamtbh
-⭐️ If you like this project, feel free to give it a star!
+---
+
+## 👨‍💻 About The Developer
+
+<p align="center">
+  <b>Satyam Kumar Jha</b><br/>
+  <i>Creative Developer • Future Engineer • Visual Architect</i>
+</p>
+
+I am **Satyam Kumar Jha**, a creative developer focused on building **high-performance, visually immersive web experiences**.
+
+I don’t just write code — I design systems where **logic meets art** and **performance meets aesthetics**.
+
+- ⚡ Crafting smooth, futuristic UI/UX
+- 🧠 Engineering scalable frontend architectures
+- 🎨 Blending 3D, animation & storytelling
+- 🚀 Constantly pushing beyond limits
+
+> **"Code is poetry, but 3D is a lifestyle."**  
+> — Satyam
+
+---
+
+## 🤝 Let's Connect
+
+<p align="center">
+  <a href="https://github.com/satyam-devx">
+    <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github"/>
+  </a>
+  <a href="#">
+    <img src="https://img.shields.io/badge/LinkedIn-Coming_Soon-blue?style=for-the-badge&logo=linkedin"/>
+  </a>
+  <a href="https://instagram.com/satyamtbh">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+  </a>
+</p>
+
+---
+
+## ⭐ Support
+
+If you like this project:
+
+- ⭐ Give it a star  
+- 🔁 Share it  
+- 💡 Take inspiration & build something even better  
+
+<p align="center">
+  <b>⚡ Built with obsession. Engineered for impact.</b>
+</p>
 
 ---

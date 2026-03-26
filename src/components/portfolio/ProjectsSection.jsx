@@ -28,16 +28,7 @@ const projects = [
     github: "#",
     image: "https://images.pexels.com/photos/6770775/pexels-photo-6770775.jpeg",
     category: "FinTech"
-  },
-  {
-  title: "Sam Voice Assistant",
-  description: "An AI-powered voice assistant that can perform tasks, answer queries, and automate daily workflows using natural language processing.",
-  tech: ["JavaScript", "Web Speech API", "OpenAI API", "Tailwind"],
-  link: "#",
-  github: "#",
-  image: "https://images.pexels.com/photos/5181148/pexels-photo-5181148.jpeg",
-  category: "AI"
-}
+  }
 ];
 
 function ProjectCard({ project, index }) {
